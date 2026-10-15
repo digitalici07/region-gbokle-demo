@@ -1,0 +1,349 @@
+{
+  "site": {
+    "nom": "Région du Gbôklè",
+    "adresse": "Hôtel de la Région, Sassandra, Côte d'Ivoire",
+    "telephone": "+225 00 00 00 00 00",
+    "email": "contact@region-gbokle.ci",
+    "horaires": "Lundi – Vendredi : 7h30 – 12h30 / 14h00 – 17h30",
+    "facebook": "#",
+    "youtube": "#",
+    "instagram": "#",
+    "chiffres_a_valider": true
+  },
+  "hero": [
+    {
+      "scene": "dawn",
+      "kicker": "Bienvenue",
+      "ligne1": "La Région du",
+      "accent": "Gbôklè",
+      "ligne2": "vous accompagne au quotidien",
+      "texte": "Sassandra et Fresco : un territoire solidaire, productif et tourné vers l'Atlantique.",
+      "cta1": [
+        "Trouver une aide",
+        "services.html#aides"
+      ],
+      "cta2": [
+        "Découvrir la région",
+        "territoire.html"
+      ],
+      "image": "assets/img/hero-1.webp",
+      "video": "assets/video/hero-1.mp4"
+    },
+    {
+      "scene": "day",
+      "kicker": "Terre d'hévéa et d'océan",
+      "ligne1": "Des filières",
+      "accent": "qui nous portent",
+      "ligne2": "hévéa, cacao, pêche, tourisme",
+      "texte": "La Région soutient les producteurs, les pêcheurs et les jeunes entrepreneurs du Gbôklè.",
+      "cta1": [
+        "Investir dans le Gbôklè",
+        "investir.html"
+      ],
+      "cta2": [
+        "Nos actualités",
+        "actualites.html"
+      ],
+      "image": "assets/img/hero-2.webp",
+      "video": "assets/video/hero-2.mp4"
+    },
+    {
+      "scene": "dusk",
+      "kicker": "Sassandra, ville de mémoire",
+      "ligne1": "Un patrimoine",
+      "accent": "à partager",
+      "ligne2": "plages, fleuve, histoire et culture",
+      "texte": "Du fleuve Sassandra aux plages de la côte, venez découvrir le Gbôklè.",
+      "cta1": [
+        "Voir l'agenda",
+        "actualites.html#agenda"
+      ],
+      "cta2": [
+        "Contacter la Région",
+        "contact.html"
+      ],
+      "image": "assets/img/hero-3.webp",
+      "video": "assets/video/hero-3.mp4"
+    }
+  ],
+  "profils": [
+    "Planteur / agriculteur",
+    "Pêcheur",
+    "Jeune / étudiant",
+    "Entrepreneur / PME",
+    "Association / coopérative",
+    "Collectivité",
+    "Particulier"
+  ],
+  "themes": [
+    "Agriculture et hévéaculture",
+    "Pêche et économie bleue",
+    "Éducation et formation",
+    "Entrepreneuriat et emploi",
+    "Culture et patrimoine",
+    "Tourisme",
+    "Infrastructures et pistes rurales",
+    "Santé et action sociale",
+    "Environnement"
+  ],
+  "aides": [
+    {
+      "titre": "Appui à la replantation hévéicole",
+      "profils": [
+        "Planteur / agriculteur",
+        "Association / coopérative"
+      ],
+      "theme": "Agriculture et hévéaculture",
+      "resume": "Matériel végétal certifié et encadrement technique pour renouveler les plantations vieillissantes.",
+      "lien": "contact.html"
+    },
+    {
+      "titre": "Équipement des pêcheurs artisanaux",
+      "profils": [
+        "Pêcheur",
+        "Association / coopérative"
+      ],
+      "theme": "Pêche et économie bleue",
+      "resume": "Moteurs, filets, chaîne du froid et formation à la sécurité en mer pour les pêcheurs du littoral.",
+      "lien": "contact.html"
+    },
+    {
+      "titre": "Bourses régionales d'excellence",
+      "profils": [
+        "Jeune / étudiant",
+        "Particulier"
+      ],
+      "theme": "Éducation et formation",
+      "resume": "Soutien financier aux élèves et étudiants méritants originaires du Gbôklè.",
+      "lien": "contact.html"
+    },
+    {
+      "titre": "Fonds d'amorçage jeunes entrepreneurs",
+      "profils": [
+        "Entrepreneur / PME",
+        "Jeune / étudiant"
+      ],
+      "theme": "Entrepreneuriat et emploi",
+      "resume": "Financement et accompagnement des premières activités génératrices de revenus.",
+      "lien": "contact.html"
+    },
+    {
+      "titre": "Appui aux coopératives agricoles",
+      "profils": [
+        "Association / coopérative",
+        "Planteur / agriculteur"
+      ],
+      "theme": "Agriculture et hévéaculture",
+      "resume": "Structuration, équipements de transformation et accès aux marchés pour les coopératives.",
+      "lien": "contact.html"
+    },
+    {
+      "titre": "Soutien aux initiatives culturelles",
+      "profils": [
+        "Association / coopérative",
+        "Collectivité"
+      ],
+      "theme": "Culture et patrimoine",
+      "resume": "Subventions pour les festivals, la sauvegarde du patrimoine et les projets artistiques locaux.",
+      "lien": "contact.html"
+    },
+    {
+      "titre": "Valorisation touristique du littoral",
+      "profils": [
+        "Entrepreneur / PME",
+        "Collectivité"
+      ],
+      "theme": "Tourisme",
+      "resume": "Aide à l'aménagement de sites, à l'hébergement local et à la promotion de la destination.",
+      "lien": "investir.html#tourisme"
+    },
+    {
+      "titre": "Programme de pistes rurales",
+      "profils": [
+        "Collectivité",
+        "Planteur / agriculteur"
+      ],
+      "theme": "Infrastructures et pistes rurales",
+      "resume": "Réhabilitation des pistes pour désenclaver les zones de production.",
+      "lien": "actualites.html"
+    },
+    {
+      "titre": "Actions sociales et santé de proximité",
+      "profils": [
+        "Particulier",
+        "Association / coopérative"
+      ],
+      "theme": "Santé et action sociale",
+      "resume": "Appui aux centres de santé de proximité et aux campagnes de prévention.",
+      "lien": "contact.html"
+    },
+    {
+      "titre": "Reboisement et protection du littoral",
+      "profils": [
+        "Collectivité",
+        "Association / coopérative"
+      ],
+      "theme": "Environnement",
+      "resume": "Plantation d'arbres, lutte contre l'érosion côtière et sensibilisation des communautés.",
+      "lien": "contact.html"
+    }
+  ],
+  "news": [
+    {
+      "id": "port-peche-sassandra",
+      "date": "2026-10-08",
+      "cat": "Pêche",
+      "titre": "Modernisation du port de pêche de Sassandra : les travaux démarrent",
+      "resume": "La Région lance un programme d'équipement destiné aux pêcheurs artisanaux du littoral.",
+      "corps": "La Région du Gbôklè engage un vaste programme de modernisation du port de pêche de Sassandra.\n\n## Ce que prévoit le programme\n- Réhabilitation du quai et des zones de débarquement\n- Installation d'une chaîne du froid\n- Formation des pêcheurs à la sécurité en mer\n\nLes premiers travaux commencent dans les prochaines semaines. Les pêcheurs et les mareyeurs seront associés à chaque étape du chantier.",
+      "image": "assets/img/port.webp"
+    },
+    {
+      "id": "replantation-hevea",
+      "date": "2026-10-02",
+      "cat": "Hévéaculture",
+      "titre": "Replantation hévéicole : un appui renforcé pour les planteurs",
+      "resume": "Matériel végétal certifié et accompagnement technique dans les sous-préfectures du Gbôklè.",
+      "corps": "Pour redynamiser la filière hévéicole, la Région propose aux planteurs un appui à la replantation.\n\n## Au programme\n- Distribution de plants certifiés\n- Encadrement technique sur le terrain\n- Appui aux coopératives pour la commercialisation\n\nLes dossiers se déposent auprès des services de la Région.",
+      "image": "assets/img/rubber.webp"
+    },
+    {
+      "id": "bourses-2026",
+      "date": "2026-09-24",
+      "cat": "Éducation",
+      "titre": "Bourses régionales : ouverture des candidatures",
+      "resume": "Lycéens et étudiants originaires du Gbôklè peuvent déposer leur dossier.",
+      "corps": "La Région ouvre la campagne des bourses régionales d'excellence.\n\n## Qui peut candidater ?\n- Les élèves et étudiants originaires du Gbôklè\n- Les candidats justifiant de bons résultats scolaires\n\nLe dossier est à retirer auprès de la Région et à déposer avant la date limite indiquée dans l'avis.",
+      "image": "assets/img/students.webp"
+    },
+    {
+      "id": "pistes-rurales",
+      "date": "2026-09-15",
+      "cat": "Infrastructures",
+      "titre": "Pistes rurales : désenclaver les zones de production",
+      "resume": "Un chantier structurant pour faciliter l'évacuation des produits agricoles.",
+      "corps": "La réhabilitation des pistes rurales est l'une des priorités de la Région.\n\n## Pourquoi c'est important\nDes routes praticables toute l'année permettent d'évacuer plus facilement les récoltes, d'accéder aux marchés et aux centres de santé.\n\nLe programme se poursuit dans les deux départements.",
+      "image": "assets/img/village.webp"
+    },
+    {
+      "id": "festival-patrimoine",
+      "date": "2026-09-05",
+      "cat": "Culture",
+      "titre": "Journées du patrimoine côtier : le programme dévoilé",
+      "resume": "Expositions, danses, gastronomie et visites guidées à Sassandra.",
+      "corps": "Sassandra accueille les Journées du patrimoine côtier.\n\n## Au programme\n- Visites guidées de la ville historique\n- Expositions d'artisans\n- Concerts et danses traditionnelles\n- Dégustations de produits de la mer\n\nL'entrée est libre.",
+      "image": "assets/img/market.webp"
+    },
+    {
+      "id": "reboisement-littoral",
+      "date": "2026-08-27",
+      "cat": "Environnement",
+      "titre": "Reboisement du littoral : mobilisation des communautés",
+      "resume": "Des milliers de plants pour protéger la côte contre l'érosion.",
+      "corps": "Habitants, écoles et associations se mobilisent pour planter des arbres le long du littoral.\n\n## Objectifs\n- Limiter l'érosion côtière\n- Restaurer la végétation\n- Sensibiliser les jeunes à l'environnement\n\nUne nouvelle campagne est prévue à la prochaine saison des pluies.",
+      "image": "assets/img/palm.webp"
+    }
+  ],
+  "agenda": [
+    {
+      "date": "2026-11-12",
+      "titre": "Session ordinaire du Conseil régional",
+      "lieu": "Hôtel de la Région, Sassandra",
+      "desc": "Vote du budget et examen des projets de la prochaine année."
+    },
+    {
+      "date": "2026-11-27",
+      "titre": "Journées du patrimoine côtier",
+      "lieu": "Sassandra",
+      "desc": "Trois jours d'animations culturelles, d'expositions et de rencontres."
+    },
+    {
+      "date": "2026-12-05",
+      "titre": "Forum des filières : hévéa, cacao, pêche",
+      "lieu": "Fresco",
+      "desc": "Rencontres entre producteurs, acheteurs et partenaires financiers."
+    }
+  ],
+  "documents": [
+    {
+      "titre": "Plan de développement régional (PDR) — synthèse",
+      "cat": "Planification",
+      "date": "2026-06-01",
+      "fichier": ""
+    },
+    {
+      "titre": "Budget primitif de la Région — exercice en cours",
+      "cat": "Finances",
+      "date": "2026-03-15",
+      "fichier": ""
+    },
+    {
+      "titre": "Délibérations de la dernière session du Conseil",
+      "cat": "Délibérations",
+      "date": "2026-07-10",
+      "fichier": ""
+    },
+    {
+      "titre": "Avis d'appel d'offres : réhabilitation de pistes rurales",
+      "cat": "Marchés publics",
+      "date": "2026-09-20",
+      "fichier": ""
+    },
+    {
+      "titre": "Formulaire de demande d'aide régionale",
+      "cat": "Formulaires",
+      "date": "2026-01-10",
+      "fichier": ""
+    },
+    {
+      "titre": "Guide de l'investisseur dans le Gbôklè",
+      "cat": "Investir",
+      "date": "2026-05-05",
+      "fichier": ""
+    }
+  ],
+  "stats": [
+    {
+      "valeur": 2,
+      "suffixe": "",
+      "label": "départements : Sassandra et Fresco"
+    },
+    {
+      "valeur": 4,
+      "suffixe": "",
+      "label": "filières phares : hévéa, cacao-palmier, pêche, tourisme"
+    },
+    {
+      "valeur": 12,
+      "suffixe": "+",
+      "label": "projets structurants en cours"
+    },
+    {
+      "valeur": 25000,
+      "suffixe": "+",
+      "label": "bénéficiaires des appuis régionaux"
+    }
+  ],
+  "elus": [
+    {
+      "nom": "[Nom du Président]",
+      "fonction": "Président du Conseil régional",
+      "photo": ""
+    },
+    {
+      "nom": "[Nom du 1er Vice-président]",
+      "fonction": "1er Vice-président",
+      "photo": ""
+    },
+    {
+      "nom": "[Nom du 2e Vice-président]",
+      "fonction": "2e Vice-président",
+      "photo": ""
+    },
+    {
+      "nom": "[Nom du Secrétaire général]",
+      "fonction": "Secrétaire général de la Région",
+      "photo": ""
+    }
+  ]
+}
