@@ -13,6 +13,7 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Gbôklè"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="application-name" content="Région du Gbôklè"><meta name="format-detection" content="telephone=no">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:wght@500;600;700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/style.css">
@@ -71,6 +72,7 @@
     </div>
     <div class="mega-foot">
       <span><b data-site="adresse">Hôtel de la Région, Sassandra</b></span>
+      <button class="btn btn-sun" type="button" data-install hidden>Installer l'application</button>
       <span>Écrivez-nous : <a data-site="email" data-keep href="mailto:contact@region-gbokle.ci" style="color:var(--sun)">contact@region-gbokle.ci</a></span>
     </div>
   </div>
@@ -152,7 +154,7 @@
         <li data-site="horaires">Lundi – Vendredi</li>
       </ul></div>
     </div>
-    <div class="foot-ecosys"><span>Sites utiles</span><a href="https://www.gouv.ci" target="_blank" rel="noopener">Portail du Gouvernement</a></div>
+    <div class="foot-ecosys"><span>Application</span><button class="btn btn-sun" type="button" data-install hidden style="min-height:40px;padding:6px 18px">Installer l'application</button><span style="margin-left:14px">Sites utiles</span><a href="https://www.gouv.ci" target="_blank" rel="noopener">Portail du Gouvernement</a></div>
     <div class="foot-bottom">
       <span>© <span id="yr">2026</span> Région du Gbôklè. Tous droits réservés.</span>
       <ul>
@@ -164,6 +166,12 @@
     </div>
   </div>
 </footer>
+<div class="pwa-bar" id="pwaBar" role="dialog" aria-label="Installer l'application" hidden>
+  <img src="assets/icon-192.png" width="48" height="48" alt="">
+  <div><b>Installer l'application</b><span id="pwaBarTxt">Accédez à la Région du Gbôklè depuis votre écran d'accueil, même avec une connexion faible.</span></div>
+  <div class="pwa-act"><button class="btn btn-sun" type="button" id="pwaYes" data-install>Installer</button><button class="btn btn-ghost" type="button" id="pwaNo" aria-label="Fermer">Plus tard</button></div>
+</div>
+<div class="pwa-toast" id="pwaToast" role="status" aria-live="polite" hidden></div>
 <button class="totop" type="button" aria-label="Retour en haut de page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
 <script src="js/site.js" defer></script>

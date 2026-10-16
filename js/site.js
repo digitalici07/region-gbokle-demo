@@ -366,6 +366,59 @@
     }).then(function () { btn.disabled = false; btn.textContent = 'Envoyer le message'; });
   });
 
+
+  /* ---------- PWA : service worker, installation, hors-ligne ---------- */
+  var toastEl = $('#pwaToast'), toastT;
+  function toast(msg, action, fn) {
+    if (!toastEl) return;
+    clearTimeout(toastT); toastEl.hidden = false;
+    toastEl.innerHTML = '<span>' + esc(msg) + '</span>' + (action ? '<button type="button">' + esc(action) + '</button>' : '');
+    if (action) toastEl.querySelector('button').onclick = function () { toastEl.hidden = true; fn(); };
+    toastT = setTimeout(function () { toastEl.hidden = true; }, action ? 12000 : 4000);
+  }
+  if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').then(function (reg) {
+        reg.addEventListener('updatefound', function () {
+          var w = reg.installing; if (!w) return;
+          w.addEventListener('statechange', function () {
+            if (w.state === 'installed' && navigator.serviceWorker.controller) toast('Une nouvelle version du site est disponible.', 'Actualiser', function () { location.reload(); });
+          });
+        });
+      }).catch(function () {});
+    });
+  }
+  var offlineDot = doc.createElement('div'); offlineDot.className = 'offline-dot'; offlineDot.textContent = 'Hors ligne'; offlineDot.setAttribute('aria-hidden', 'true'); doc.body.appendChild(offlineDot);
+  function netState() { root.classList.toggle('is-offline', !navigator.onLine); }
+  window.addEventListener('offline', function () { netState(); toast('Vous êtes hors ligne : les pages déjà vues restent disponibles.'); });
+  window.addEventListener('online', function () { netState(); toast('Connexion rétablie.'); });
+  netState();
+
+  var deferred = null, standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+  var bar = $('#pwaBar'), DISMISS = 'gbokle-install-dismiss';
+  function dismissed() { try { return Date.now() - +localStorage.getItem(DISMISS) < 14 * 864e5; } catch (e) { return false; } }
+  function showInstallUI() { $$('[data-install]').forEach(function (b) { b.hidden = false; }); }
+  function showBar() {
+    if (!bar || standalone || dismissed()) return;
+    setTimeout(function () { if (!dismissed()) bar.hidden = false; }, 12000);
+  }
+  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferred = e; showInstallUI(); showBar(); });
+  window.addEventListener('appinstalled', function () { deferred = null; $$('[data-install]').forEach(function (b) { b.hidden = true; }); if (bar) bar.hidden = true; toast('Application installée.'); });
+  if (isIOS && !standalone) {
+    showInstallUI();
+    var tx = $('#pwaBarTxt'); if (tx) tx.textContent = "Sur iPhone : touchez le bouton Partager, puis « Sur l'écran d'accueil ».";
+    var yes = $('#pwaYes'); if (yes) yes.hidden = true;
+    showBar();
+  }
+  $$('[data-install]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (deferred) { deferred.prompt(); deferred.userChoice.finally(function () { deferred = null; if (bar) bar.hidden = true; }); }
+      else if (isIOS) { setMenu(false); if (bar) { bar.hidden = false; } }
+    });
+  });
+  var no = $('#pwaNo'); if (no) no.addEventListener('click', function () { bar.hidden = true; try { localStorage.setItem(DISMISS, Date.now()); } catch (e) {} });
+
   /* ---------- démarrage ---------- */
   observe(doc);
   $$('[data-reveal]').forEach(function (el) { if (!el.style.getPropertyValue('--i')) { var p = el.parentElement, k = p ? Array.prototype.indexOf.call(p.children, el) : 0; el.style.setProperty('--i', Math.min(k, 5)); } });

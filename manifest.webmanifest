@@ -1,1 +1,26 @@
-{"name":"Région du Gbôklè","short_name":"Gbôklè","lang":"fr","start_url":"index.html","display":"standalone","background_color":"#0A2A6B","theme_color":"#0A2A6B","icons":[{"src":"assets/icon-512.png","sizes":"512x512","type":"image/png"},{"src":"assets/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]}
+{
+  "id": "./",
+  "name": "Région du Gbôklè",
+  "short_name": "Gbôklè",
+  "description": "Site officiel de la Région du Gbôklè : aides, actualités, services et territoire.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0A2A6B",
+  "theme_color": "#0A2A6B",
+  "categories": ["government", "news"],
+  "icons": [
+    {"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
+    {"src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Trouver une aide", "short_name": "Aides", "url": "services.html#aides", "icons": [{"src": "assets/icon-192.png", "sizes": "192x192"}]},
+    {"name": "Actualités", "short_name": "Actualités", "url": "actualites.html", "icons": [{"src": "assets/icon-192.png", "sizes": "192x192"}]},
+    {"name": "Nous contacter", "short_name": "Contact", "url": "contact.html", "icons": [{"src": "assets/icon-192.png", "sizes": "192x192"}]}
+  ]
+}
